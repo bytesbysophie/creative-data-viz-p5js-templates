@@ -1,4 +1,5 @@
 let data, maxValue, barX, barY, barHeight;
+let margin = 400;
 
 // Standard P5.js function: Will be called one time on load
 function setup() {
@@ -37,7 +38,6 @@ function draw() {
     // the coreesponding value through its height
     data.forEach((d, i) => {
 
-      margin = 400
       barWidth = 50 + 40 * sin(step);
       barMaxWidth = height-margin;
       barBorderRadius = barWidth/2;
